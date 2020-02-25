@@ -21,6 +21,10 @@ jobs:
       - run: flutter channel master
       - run: flutter upgrade
       - run: flutter pub get
+      - run: |
+          echo "$(pwd)"
+          ls
+          cd flutter-tetris
       # skip test
       - run: flutter build windows
 
